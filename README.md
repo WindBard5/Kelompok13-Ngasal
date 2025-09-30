@@ -1,7 +1,7 @@
-Kelompok 13 : Ngasal
-Abu Bakar Siddiq Siregar - 122140164
-Bayu Praneswara Haris - 122140219
-Jason Surya Padantya - 1221402137
+# Kelompok 13 : Ngasal
+# Abu Bakar Siddiq Siregar - 122140164
+# Bayu Praneswara Haris - 122140219
+# Jason Surya Padantya - 1221402137
 
 Perbandingan performa antara Plain-34 dan ResNet-34
 
