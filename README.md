@@ -38,10 +38,11 @@ Secara keseluruhan, dampak koneksi residual adalah menciptakan jalur alternatif 
 
 ### 4. Konfigurasi hyperparameter yang digunakan
 
-Hyperparameter	Nilai yang Digunakan
-Dataset	        5 Makanan Indonesia
-Optimizer	    Adam
-Learning Rate	1e−3 (0.001)
-Batch Size	    32
-Jumlah Epoch	50
-Loss Function	Cross Entropy Loss
+| Hyperparameter | Nilai yang Digunakan |
+| :--- | :--- |
+| **Dataset** | 5 Makanan Indonesia |
+| **Optimizer** | Adam |
+| **Learning Rate** | 1e-3 (0.001) |
+| **Batch Size** | 32 |
+| **Jumlah Epoch** | 50 |
+| **Loss Function** | Cross Entropy Loss |
