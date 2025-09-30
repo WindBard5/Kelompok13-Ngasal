@@ -16,10 +16,13 @@ Konvergensi	                Stagnan / Degradasi	            Cepat dan Stabil
 2. Grafik sederhana yang menunjukkan kurva training
 
 Plain-34
+
 ![alt text](outputPlain34.png)
 
 Resnet-34
+
 ![alt text](outputResnet34.png)
+
 ![alt text](output2Resnet34.png)
 
 3. Analisis singkat (2-3 paragraf) mengenai perbedaan performa dan dampak residual connection
