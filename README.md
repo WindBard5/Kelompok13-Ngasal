@@ -43,6 +43,6 @@ Secara keseluruhan, dampak koneksi residual adalah menciptakan jalur alternatif 
 | **Dataset** | 5 Makanan Indonesia |
 | **Optimizer** | Adam |
 | **Learning Rate** | 1e-3 (0.001) |
-| **Batch Size** | 32 |
-| **Jumlah Epoch** | 50 |
+| **Batch Size** | 8 |
+| **Jumlah Epoch** | 15 |
 | **Loss Function** | Cross Entropy Loss |
