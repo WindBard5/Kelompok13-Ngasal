@@ -6,13 +6,13 @@
 ## Perbandingan performa antara Plain-34 dan ResNet-34
 
 # 1. Tabel perbandingan metrik pada epoch terakhir 
-`
-Metrik	                    Plain-34 	                    ResNet-34 
-Akurasi Validasi Tertinggi	35.2%	                        82.5%
-Akurasi Training Akhir	    45.8%	                        95.1%
-Loss Validasi Terendah	    1.62	                        0.78
-Konvergensi	                Stagnan / Degradasi	            Cepat dan Stabil
-`
+
+`Metrik	                    Plain-34 	                    ResNet-34 `
+`Akurasi Validasi Tertinggi	35.2%	                        82.5%`
+`Akurasi Training Akhir	    45.8%	                        95.1%`
+`Loss Validasi Terendah	    1.62	                        0.78`
+`Konvergensi	                Stagnan / Degradasi	          Cepat dan Stabil`
+
 2. Grafik sederhana yang menunjukkan kurva training
 
 Plain-34
