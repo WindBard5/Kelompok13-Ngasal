@@ -1,0 +1,108 @@
+[Running] python -u "d:\Document\Kuliah\Semester 7\Deep Learning\TugasTOR2\resnet34Modif.py"
+Device: cuda
+
+=== Training resnet34_std ===
+D:\Alat program\SupportSystem\Lib\site-packages\PIL\Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Epoch 1/15 | Train 32.96% | Val 29.73%
+Epoch 2/15 | Train 38.15% | Val 36.04%
+Epoch 3/15 | Train 41.65% | Val 51.80%
+Epoch 4/15 | Train 44.02% | Val 40.09%
+Epoch 5/15 | Train 46.50% | Val 54.95%
+Epoch 6/15 | Train 49.89% | Val 48.65%
+Epoch 7/15 | Train 53.27% | Val 58.11%
+Epoch 8/15 | Train 56.09% | Val 51.80%
+Epoch 9/15 | Train 59.26% | Val 59.46%
+Epoch 10/15 | Train 62.19% | Val 44.59%
+Epoch 11/15 | Train 62.75% | Val 67.57%
+Epoch 12/15 | Train 60.16% | Val 66.22%
+Epoch 13/15 | Train 66.82% | Val 71.17%
+Epoch 14/15 | Train 68.96% | Val 64.41%
+Epoch 15/15 | Train 69.86% | Val 76.58%
+Saved: resnet34_std.pth & resnet34_std_history.npz
+
+=== Classification Report for resnet34_std ===
+              precision    recall  f1-score   support
+
+   gado_gado       0.84      0.46      0.59        46
+       bakso       0.53      0.89      0.66        45
+     rendang       0.86      0.95      0.90        39
+ nasi_goreng       0.90      0.88      0.89        41
+   soto_ayam       0.95      0.71      0.81        51
+
+    accuracy                           0.77       222
+   macro avg       0.81      0.78      0.77       222
+weighted avg       0.82      0.77      0.77       222
+
+
+=== Training resnet34_preact ===
+D:\Alat program\SupportSystem\Lib\site-packages\PIL\Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Epoch 1/15 | Train 22.46% | Val 24.32%
+Epoch 2/15 | Train 31.49% | Val 31.53%
+Epoch 3/15 | Train 36.57% | Val 38.29%
+Epoch 4/15 | Train 41.87% | Val 36.49%
+Epoch 5/15 | Train 43.12% | Val 42.79%
+Epoch 6/15 | Train 44.81% | Val 49.10%
+Epoch 7/15 | Train 47.07% | Val 48.65%
+Epoch 8/15 | Train 51.47% | Val 56.31%
+Epoch 9/15 | Train 50.79% | Val 58.56%
+Epoch 10/15 | Train 55.64% | Val 57.66%
+Epoch 11/15 | Train 55.64% | Val 61.71%
+Epoch 12/15 | Train 54.85% | Val 60.81%
+Epoch 13/15 | Train 54.97% | Val 61.71%
+Epoch 14/15 | Train 58.01% | Val 59.46%
+Epoch 15/15 | Train 58.80% | Val 68.92%
+Saved: resnet34_preact.pth & resnet34_preact_history.npz
+
+=== Classification Report for resnet34_preact ===
+              precision    recall  f1-score   support
+
+   gado_gado       0.50      0.15      0.23        46
+       bakso       0.60      0.73      0.66        45
+     rendang       0.84      0.95      0.89        39
+ nasi_goreng       0.67      0.98      0.79        41
+   soto_ayam       0.73      0.71      0.72        51
+
+    accuracy                           0.69       222
+   macro avg       0.67      0.70      0.66       222
+weighted avg       0.66      0.69      0.65       222
+
+
+=== Training resnet34_kernel ===
+D:\Alat program\SupportSystem\Lib\site-packages\PIL\Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Epoch 1/15 | Train 28.67% | Val 34.23%
+Epoch 2/15 | Train 29.46% | Val 36.04%
+Epoch 3/15 | Train 40.63% | Val 50.90%
+Epoch 4/15 | Train 47.40% | Val 53.60%
+Epoch 5/15 | Train 52.37% | Val 48.65%
+Epoch 6/15 | Train 54.40% | Val 54.50%
+Epoch 7/15 | Train 56.09% | Val 62.61%
+Epoch 8/15 | Train 60.05% | Val 66.67%
+Epoch 9/15 | Train 60.50% | Val 63.06%
+Epoch 10/15 | Train 62.42% | Val 53.15%
+Epoch 11/15 | Train 63.66% | Val 66.67%
+Epoch 12/15 | Train 62.98% | Val 72.97%
+Epoch 13/15 | Train 64.90% | Val 73.42%
+Epoch 14/15 | Train 66.70% | Val 58.56%
+Epoch 15/15 | Train 68.74% | Val 59.46%
+Saved: resnet34_kernel.pth & resnet34_kernel_history.npz
+
+=== Classification Report for resnet34_kernel ===
+              precision    recall  f1-score   support
+
+   gado_gado       0.49      0.70      0.58        46
+       bakso       0.48      0.89      0.62        45
+     rendang       1.00      0.03      0.05        39
+ nasi_goreng       0.74      0.76      0.75        41
+   soto_ayam       0.90      0.55      0.68        51
+
+    accuracy                           0.59       222
+   macro avg       0.72      0.58      0.54       222
+weighted avg       0.72      0.59      0.55       222
+
+           Model  Train Loss  Val Loss  Train Acc %  Val Acc %
+   Std ResNet-34    0.810432  0.613365    69.864560  76.576577
+PreAct ResNet-34    1.080484  0.828189    58.803612  68.918919
+Kernel ResNet-34    0.859495  0.978140    68.735892  59.459459
