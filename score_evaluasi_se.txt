@@ -1,0 +1,70 @@
+========== Training resnet34 ==========
+Epoch 1/10 | Train 43.12% | Val 46.40%
+Epoch 2/10 | Train 58.13% | Val 40.09%
+Epoch 3/10 | Train 63.54% | Val 42.79%
+Epoch 4/10 | Train 63.77% | Val 57.21%
+Epoch 5/10 | Train 68.17% | Val 63.96%
+Epoch 6/10 | Train 71.67% | Val 33.33%
+Epoch 7/10 | Train 70.65% | Val 67.57%
+Epoch 8/10 | Train 74.60% | Val 70.27%
+Epoch 9/10 | Train 75.28% | Val 54.50%
+Epoch 10/10 | Train 76.64% | Val 61.26%
+🎉 Training resnet34 selesai!
+Saved: resnet34.pth & resnet34_history.npz
+
+=== Evaluasi Detail: ResNet34 (Baseline) ===
+              precision    recall  f1-score   support
+
+   gado_gado       0.44      0.46      0.45        46
+       bakso       0.77      0.44      0.56        45
+     rendang       0.89      0.87      0.88        39
+ nasi_goreng       1.00      0.34      0.51        41
+   soto_ayam       0.49      0.92      0.64        51
+
+    accuracy                           0.61       222
+   macro avg       0.72      0.61      0.61       222
+weighted avg       0.70      0.61      0.60       222
+...
+
+========== Training resnet34_se ==========
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+c:\Users\Asus\miniconda3\Lib\site-packages\torch\utils\data\dataloader.py:666: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+c:\Users\Asus\miniconda3\Lib\site-packages\PIL\Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+c:\Users\Asus\miniconda3\Lib\site-packages\PIL\Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Epoch 1/10 | Train 45.60% | Val 25.23%
+Epoch 2/10 | Train 59.82% | Val 53.60%
+Epoch 3/10 | Train 67.04% | Val 52.70%
+Epoch 4/10 | Train 68.62% | Val 45.05%
+Epoch 5/10 | Train 72.12% | Val 60.81%
+Epoch 6/10 | Train 73.59% | Val 59.01%
+Epoch 7/10 | Train 76.07% | Val 64.86%
+Epoch 8/10 | Train 78.33% | Val 64.86%
+Epoch 9/10 | Train 78.10% | Val 70.27%
+Epoch 10/10 | Train 81.04% | Val 68.47%
+🎉 Training resnet34_se selesai!
+Saved: resnet34-se.pth & resnet34-se_history.npz
+
+=== Evaluasi Detail: ResNet34-SE (Explorasi) ===
+              precision    recall  f1-score   support
+
+   gado_gado       0.70      0.30      0.42        46
+       bakso       0.42      1.00      0.60        45
+     rendang       1.00      0.79      0.89        39
+ nasi_goreng       1.00      0.63      0.78        41
+   soto_ayam       0.92      0.71      0.80        51
+
+    accuracy                           0.68       222
+   macro avg       0.81      0.69      0.70       222
+weighted avg       0.80      0.68      0.69       222
+
+=== Perbandingan Kinerja (Epoch Terakhir) ===
+                  Model Train Loss Val Loss Train Acc % Val Acc %
+    ResNet34 (Baseline)     0.6626   0.9584       76.64     61.26
+ResNet34-SE (Explorasi)     0.5419   0.9636       81.04     68.47
+
+Semua pelatihan dan evaluasi selesai!
+
+      
