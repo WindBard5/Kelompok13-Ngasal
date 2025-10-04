@@ -1,0 +1,49 @@
+Device: cpu
+
+=== Training resnet34_std ===
+c:\Users\Asus\miniconda3\Lib\site-packages\torch\utils\data\dataloader.py:666: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+Epoch 1/10 | Train Loss 1.6079 | Val Loss 1.5543 | Train Acc 30.70% | Val Acc 36.49%
+Epoch 2/10 | Train Loss 1.3675 | Val Loss 1.2327 | Train Acc 41.99% | Val Acc 48.65%
+Epoch 3/10 | Train Loss 1.3102 | Val Loss 1.2224 | Train Acc 45.03% | Val Acc 49.10%
+Epoch 4/10 | Train Loss 1.2464 | Val Loss 0.9817 | Train Acc 47.86% | Val Acc 63.06%
+Epoch 5/10 | Train Loss 1.1732 | Val Loss 1.0378 | Train Acc 54.29% | Val Acc 59.01%
+Epoch 6/10 | Train Loss 1.1155 | Val Loss 1.1694 | Train Acc 57.67% | Val Acc 53.60%
+Epoch 7/10 | Train Loss 1.0806 | Val Loss 1.1383 | Train Acc 58.92% | Val Acc 51.80%
+Epoch 8/10 | Train Loss 1.0263 | Val Loss 0.9785 | Train Acc 60.27% | Val Acc 56.76%
+Epoch 9/10 | Train Loss 0.9635 | Val Loss 0.8327 | Train Acc 66.93% | Val Acc 66.67%
+Epoch 10/10 | Train Loss 0.9543 | Val Loss 0.7861 | Train Acc 67.16% | Val Acc 71.17%
+🎉 Training selesai!
+Saved: resnet34_food5.pth & resnet34_history.npz
+
+=== Training resnet34-se_std ===
+c:\Users\Asus\miniconda3\Lib\site-packages\PIL\Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Epoch 1/10 | Train Loss 1.4155 | Val Loss 1.7903 | Train Acc 40.41% | Val Acc 49.10%
+Epoch 2/10 | Train Loss 1.0890 | Val Loss 1.7550 | Train Acc 56.88% | Val Acc 43.24%
+Epoch 2/10 | Train Loss 1.0890 | Val Loss 1.7550 | Train Acc 56.88% | Val Acc 43.24%
+Epoch 3/10 | Train Loss 1.0254 | Val Loss 1.1993 | Train Acc 62.87% | Val Acc 55.86%
+Epoch 3/10 | Train Loss 1.0254 | Val Loss 1.1993 | Train Acc 62.87% | Val Acc 55.86%
+Epoch 4/10 | Train Loss 0.8620 | Val Loss 2.0335 | Train Acc 68.17% | Val Acc 46.40%
+Epoch 4/10 | Train Loss 0.8620 | Val Loss 2.0335 | Train Acc 68.17% | Val Acc 46.40%
+Epoch 5/10 | Train Loss 0.7515 | Val Loss 1.4756 | Train Acc 72.91% | Val Acc 54.95%
+Epoch 5/10 | Train Loss 0.7515 | Val Loss 1.4756 | Train Acc 72.91% | Val Acc 54.95%
+Epoch 6/10 | Train Loss 0.6561 | Val Loss 1.3711 | Train Acc 77.54% | Val Acc 59.46%
+Epoch 6/10 | Train Loss 0.6561 | Val Loss 1.3711 | Train Acc 77.54% | Val Acc 59.46%
+Epoch 7/10 | Train Loss 0.6601 | Val Loss 0.8482 | Train Acc 77.43% | Val Acc 69.82%
+Epoch 7/10 | Train Loss 0.6601 | Val Loss 0.8482 | Train Acc 77.43% | Val Acc 69.82%
+Epoch 8/10 | Train Loss 0.5211 | Val Loss 1.1144 | Train Acc 82.84% | Val Acc 59.01%
+Epoch 8/10 | Train Loss 0.5211 | Val Loss 1.1144 | Train Acc 82.84% | Val Acc 59.01%
+Epoch 9/10 | Train Loss 0.4949 | Val Loss 0.7261 | Train Acc 82.84% | Val Acc 75.68%
+Epoch 9/10 | Train Loss 0.4949 | Val Loss 0.7261 | Train Acc 82.84% | Val Acc 75.68%
+Epoch 10/10 | Train Loss 0.4705 | Val Loss 0.4909 | Train Acc 85.21% | Val Acc 86.04%
+🎉 Training selesai!
+Epoch 10/10 | Train Loss 0.4705 | Val Loss 0.4909 | Train Acc 85.21% | Val Acc 86.04%
+🎉 Training selesai!
+Saved: resnet34-se_food5.pth & resnet34-se_history.npz
+
+=== Perbandingan Kinerja (Epoch Terakhir) ===
+            Model Train Loss Val Loss Train Acc % Val Acc %
+          Plain34     1.1168   1.3219       53.95     49.55
+ResNet34 Standard     0.9543   0.7861       67.16     71.17
+      ResNet34-SE     0.4705   0.4909       85.21     86.04
